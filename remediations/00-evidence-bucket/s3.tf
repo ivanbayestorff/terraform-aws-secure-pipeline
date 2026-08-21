@@ -9,7 +9,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "YOUR-TFSTATE-BUCKET"
+    bucket = "pipeline-project-terraform-state"
     key    = "terraform-aws-secure-pipeline/remediations/00-evidence-bucket/terraform.tfstate"
     region = "us-east-1"
   }
